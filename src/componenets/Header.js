@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import MenuItem from "./MenuItem";
 import ThemeComp from "./ThemeComp";
+import Link from "next/link";
 
 function Header() {
   const [keyword, setKeyword] = useState("");
@@ -28,7 +29,9 @@ function Header() {
   return (
     <div className="flex items-center gap-7 h-20 p-5">
       <div className="bg-amber-600 rounded-lg p-3 text-2xl font-bold">
+        <Link href='/'>
         MovieApp
+        </Link>
       </div>
       <div className="flex flex-1 items-center gap-2 border p-3 rounded-lg">
         <input

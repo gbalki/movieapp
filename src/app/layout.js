@@ -12,7 +12,6 @@ function Layout({ children }) {
           <Header />
           <Tabs />
           {children}
-          <footer>footer</footer>
         </Providers>
       </body>
     </html>
